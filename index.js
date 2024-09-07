@@ -13,7 +13,7 @@ const router = require('./routes/route.users');
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 8000;
 
 connectDB();
 
