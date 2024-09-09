@@ -18,7 +18,7 @@ const PORT = process.env.PORT || 8000;
 connectDB();
 
 app.use(cors({
-    origin: process.env.ALLOWED_ORIGIN || 'https://job-horizone.vercel.app',
+    origin: process.env.ALLOWED_ORIGIN || 'https://localhost:3000',
     optionsSuccessStatus: 200
 }));
 
