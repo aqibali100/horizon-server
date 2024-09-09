@@ -18,7 +18,7 @@ const PORT = process.env.PORT || 8000;
 connectDB();
 
 app.use(cors({
-    origin: process.env.ALLOWED_ORIGIN,
+    origin: process.env.ALLOWED_ORIGIN || 'http://localhost:3000',
     optionsSuccessStatus: 200
 }));
 
